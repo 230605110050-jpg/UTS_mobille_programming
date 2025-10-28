@@ -112,16 +112,3 @@ Menu dropdown menyesuaikan ukuran layar pengguna:
 | Klik "Keluar" | Logout dan kembali ke halaman login. |
 
 ---
-
-## 7. Mengubah Halaman Awal Aplikasi
-
-Untuk mengubah halaman awal aplikasi, edit file `App.tsx`:
-
-```typescript
-// Mulai dari halaman login
-const [currentPage, setCurrentPage] = useState<Page>('login');
-const [currentUser, setCurrentUser] = useState<User | null>(null);
-
-// ATAU mulai dari user yang sudah login (mode demo)
-const [currentPage, setCurrentPage] = useState<Page>('home');
-const [currentUser, setCurrentUser] = useState<User | null>(mockUser);
